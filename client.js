@@ -42,8 +42,23 @@ function employeeIterator() {
 }
 
 function newEmployeeObjectCreator(employee) {
-  return {};
-}
+  // console.log('NEW OBJECT CREATOR:' ,employee);
+  // calculations
+  let bonusPercentage = 10;
+
+  if (employee.reviewRating <= 2) {
+    bonusPercentage = 0;
+  }
+
+  console.log('NEW OBJECT CREATOR:' ,employee.reviewRating);
+
+  return {
+      name: employee.name,
+      bonusPercentage: bonusPercentage,
+      totalCompensation: 0,
+      totalBonus: 0,
+    };
+  };
 
 employeeIterator();
 
