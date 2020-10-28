@@ -31,6 +31,13 @@ const employees = [
   }
 ];
 
+function employeeIterator() {
+  // for loop
+  for (let i = 0; i < employees.length; i++) {
+    console.log(employees[i]);
+  }
+}
+
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
 // Take small steps! Don't write a for loop and two functions that do all of the calculations right away.
