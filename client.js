@@ -35,8 +35,17 @@ function employeeIterator() {
   // for loop
   for (let i = 0; i < employees.length; i++) {
     console.log(employees[i]);
+    const newObj = newEmployeeObjectCreator(employees[i]);
+
+    console.log('NEW OBJECT: ' ,newObj);
   }
 }
+
+function newEmployeeObjectCreator(employee) {
+  return {};
+}
+
+employeeIterator();
 
 // YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
