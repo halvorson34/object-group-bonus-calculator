@@ -31,6 +31,9 @@ const employees = [
   }
 ];
 
+// YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
+
+
 function employeeIterator() {
   // for loop
   for (let i = 0; i < employees.length; i++) {
@@ -62,7 +65,6 @@ function newEmployeeObjectCreator(employee) {
 
 employeeIterator();
 
-// YOU SHOULD NOT NEED TO CHANGE ANYTHING ABOVE THIS POINT
 
 // Take small steps! Don't write a for loop and two functions that do all of the calculations right away.
 // This problem is massive! Break the problem down. Use the debugger.
