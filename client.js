@@ -62,6 +62,12 @@ function newEmployeeObjectCreator(employee) {
   console.log('NEW OBJECT CREATOR:' ,employee.reviewRating);
   console.log('NEW OBJECT CREATOR: (length test)' ,employee.employeeNumber.length)
 
+  if (employee.employeeNumber.length === 4) {
+    bonusPercentage += 0.05;
+  }
+
+  // adjust down 1% if salary is greater than 65000
+
   return {
       name: employee.name,
       bonusPercentage: bonusPercentage,
