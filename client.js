@@ -60,6 +60,7 @@ function newEmployeeObjectCreator(employee) {
   }
 
   console.log('NEW OBJECT CREATOR:' ,employee.reviewRating);
+  console.log('NEW OBJECT CREATOR: (length test)' ,employee.employeeNumber.length)
 
   return {
       name: employee.name,
