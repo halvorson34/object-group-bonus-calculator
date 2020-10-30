@@ -78,11 +78,19 @@ function newEmployeeObjectCreator(employee) {
     bonusPercentage = 0;
   }
 
+  // calculate my total bonus
+
+  let totalBonus = employee.annualSalary * bonusPercentage;
+
+  // calculate my total compensation
+
+  let totalCompensation = parseInt(employee.annualSalary) + totalBonus;
+
   return {
       name: employee.name,
       bonusPercentage: bonusPercentage,
-      totalCompensation: 0,
-      totalBonus: 0,
+      totalCompensation: totalCompensation,
+      totalBonus: totalBonus,
     };
   };
 
