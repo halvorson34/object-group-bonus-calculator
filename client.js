@@ -68,6 +68,16 @@ function newEmployeeObjectCreator(employee) {
 
   // adjust down 1% if salary is greater than 65000
 
+  if (parseInt(employee.annualSalary) > 65000) {
+    bonusPercentage -= 0.01;
+  }
+
+  if (bonusPercentage > .13) {
+    bonusPercentage = 0.13;
+  } else if (bonusPercentage < 0) {
+    bonusPercentage = 0;
+  }
+
   return {
       name: employee.name,
       bonusPercentage: bonusPercentage,
